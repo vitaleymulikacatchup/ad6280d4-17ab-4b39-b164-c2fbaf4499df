@@ -5,7 +5,7 @@ import Link from "next/link";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import TeamCardTwo from '@/components/sections/team/TeamCardTwo';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Users, Linkedin, Twitter, Dribbble, Instagram, Behance } from "lucide-react";
+import { Users, Linkedin, Twitter, Dribbble, Instagram, Globe } from "lucide-react";
 
 export default function TeamPage() {
   return (
@@ -76,7 +76,7 @@ export default function TeamPage() {
               imageSrc: "https://pixabay.com/get/g3158867378ed56febf40fc9d6288de0493a3276f6a47d1b215c2554ab46dcfcc110b1265890cbb85c9c5deea130e082e87b62bc1461361362d7bbbe014141307_1280.jpg",
               imageAlt: "Sarah Kim - UX/UI Designer",
               socialLinks: [
-                { icon: Behance, url: "https://behance.net/sarah_ux" },
+                { icon: Globe, url: "https://behance.net/sarah_ux" },
                 { icon: Linkedin, url: "https://linkedin.com/in/sarah-kim-ux" }
               ]
             },

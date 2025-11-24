@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import Link from "next/link";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
-import MetricCardFour from '@/components/sections/metric/MetricCardFour';
+import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Briefcase, Award, Users, Trophy, Handshake } from "lucide-react";
@@ -72,36 +72,35 @@ export default function WorkPage() {
       </div>
 
       <div id="metric" data-section="metric">
-        <MetricCardFour
+        <MetricCardOne
           title="Our Impact"
           description="Numbers that showcase our commitment to delivering exceptional design results"
           tag="Achievements"
           tagIcon={Award}
           textboxLayout="default"
+          gridVariant="uniform-all-items-equal"
+          animationType="slide-up"
           metrics={[
             {
               id: "1",
               icon: Briefcase,
-              title: "Projects Completed",
               value: "250+",
-              imageSrc: "https://pixabay.com/get/gcfb6bcfb556cfe454527e3224d4bc68c3f21ae8b7c7edd7b065a0b4d6a49079a7f64fec89fae3b32a8f734ce4bfc9dcdec935832c739689d544f4554ed3d6013_1280.jpg",
-              imageAlt: "Completed design projects showcase"
+              title: "Projects",
+              description: "Projects Completed"
             },
             {
               id: "2",
               icon: Users,
-              title: "Happy Clients",
               value: "150+",
-              imageSrc: "https://pixabay.com/get/gc5a0a9832bd6cd807e5f7cb3f17de9456395a6e818a965bf1701f2d9ff74c31473f20942bf4519dec4def9ac9b9ca66467b80399f62cf8cccd5604bde8a6105f_1280.jpg",
-              imageAlt: "Happy clients testimonials"
+              title: "Clients",
+              description: "Happy Clients"
             },
             {
               id: "3",
               icon: Trophy,
-              title: "Design Awards",
               value: "25+",
-              imageSrc: "https://pixabay.com/get/gad82bfb8d530ebc0b240c1653a23d1c28075324a246d26400239bd58b25ee5205ce609b50cc6a987049b19fc6d343bf0efce8b0e3330bf0c6605163e6fc080ed_1280.jpg",
-              imageAlt: "Design awards and recognition"
+              title: "Awards",
+              description: "Design Awards"
             }
           ]}
         />
