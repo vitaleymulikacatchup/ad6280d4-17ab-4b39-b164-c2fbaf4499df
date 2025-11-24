@@ -7,7 +7,7 @@ import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import MetricCardFour from '@/components/sections/metric/MetricCardFour';
 import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
 import FooterBase from '@/components/sections/footer/FooterBase';
-import { Briefcase, Award, Briefcase as BriefcaseIcon, Users, Trophy, Handshake } from "lucide-react";
+import { Briefcase, Award, Users, Trophy, Handshake } from "lucide-react";
 
 export default function WorkPage() {
   return (
@@ -81,7 +81,7 @@ export default function WorkPage() {
           metrics={[
             {
               id: "1",
-              icon: BriefcaseIcon,
+              icon: Briefcase,
               title: "Projects Completed",
               value: "250+",
               imageSrc: "https://pixabay.com/get/gcfb6bcfb556cfe454527e3224d4bc68c3f21ae8b7c7edd7b065a0b4d6a49079a7f64fec89fae3b32a8f734ce4bfc9dcdec935832c739689d544f4554ed3d6013_1280.jpg",
@@ -122,7 +122,7 @@ export default function WorkPage() {
             "https://pixabay.com/get/g0d159419903c3173a688100a16c4d4cd53c1c89c8af6754d587813c0f6476699cb07b044f5740f82987c6f6c71a60e49322392746af9428ec3572f8095749dec_1280.jpg",
             "https://pixabay.com/get/g33dad0923349443550071066be9cefe93da0627f0711a54dadeadc2768084cdb90cf3c009f3026c710761408b946e8c9607a1b913df52875dcdf22cd59717d2f_1280.jpg",
             "https://pixabay.com/get/g78cfd7df1c26b7b88705ac8e97627a85a6ef73b2c0c06b7612f1581a7f41390b9f9312933efb9ebacc2c36d1d39feb82d8fa1f99f766583fe069112c7289df07_1280.jpg"
-          ]
+          ]}
           speed={35}
           showCard={true}
         />
